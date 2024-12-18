@@ -1,26 +1,34 @@
 # Origin-IP-Finder
 
-- **Available Search engine support**
+- **Available Search engine support:**
   - **[dig](https://phoenixnap.com/kb/linux-dig-command-examples)**
-  - **[censys](https://search.censys.io)**
+  - **[censys (PAID)](https://search.censys.io)**
   - **[securitytrails](https://securitytrails.com)**
   - **[viewdns](https://viewdns.info)**
   - **[hunter-how](https://hunter.how)**
   - **[fofa](https://en.fofa.info)**
   - **[zoomeye](https://www.zoomeye.org)**
-  - **[zoomeye_without_api](https://www.zoomeye.org)**
   
 # Installation
 ```
 git clone https://github.com/Mysteriza/originip.git
-cd Origin-IP-Finder
+```
+
+```
+cd originip
+```
+
+```
 chmod +x oif
+```
+
+```
 mv oif /usr/bin/
 ```
 
 # Setup
 
-**censys api is `paid` and setup is `optional` but if want good results please setup with...**
+**The Censys API is paid and its setup is optional, although adding the API can lead to improved results:**
 
 ```
 -c CENSYS_ID:CENSYS_SECRET
