@@ -35,11 +35,11 @@ mv oif /usr/bin/
 ```
   
 # Usage
-  
+
 ```
 oif -d domain.com
 ```
-
+Or you can use this command to use API:
 ```
 bash oif -d example.com -c CENSYS_ID:CENSYS_SECRET -s SECURITYTRAILS_API_KEY -h HUNTER_API_KEY -z ZOOMEYE_API_KEY -f email@example.com:fofa_api_key
 ```
