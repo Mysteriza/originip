@@ -2,7 +2,6 @@
 
 - **Available Search engine support**
   - **[dig](https://phoenixnap.com/kb/linux-dig-command-examples)**
-  - **[shodan](https://www.shodan.io)**
   - **[censys](https://search.censys.io)**
   - **[securitytrails](https://securitytrails.com)**
   - **[viewdns](https://viewdns.info)**
@@ -13,7 +12,7 @@
   
 # Installation
 ```
-git clone https://github.com/rix4uni/Origin-IP-Finder.git
+git clone https://github.com/Mysteriza/originip.git
 cd Origin-IP-Finder
 chmod +x oif
 mv oif /usr/bin/
@@ -21,10 +20,10 @@ mv oif /usr/bin/
 
 # Setup
 
-**shodan api is `paid` and setup is `optional` but if want good results please setup...**
+**censys api is `paid` and setup is `optional` but if want good results please setup with...**
 
 ```
-shodan init SHODAN_API_KEY
+-c CENSYS_ID:CENSYS_SECRET
 ```
   
 # Usage
@@ -34,8 +33,10 @@ oif -d domain.com
 ```
 
 ```
-bash oif -d domain.com -censys censys-api-id:censys-api-secrect -securitytrails api -hunter api -zoomeye api
+bash oif -d example.com -c CENSYS_ID:CENSYS_SECRET -s SECURITYTRAILS_API_KEY -h HUNTER_API_KEY -z ZOOMEYE_API_KEY -f email@example.com:fofa_api_key
 ```
 
 # Output
 ![output](.github/image.png)
+![output 2](https://github.com/user-attachments/assets/2f41830b-c91b-4c51-91ce-291680edb7de)
+
