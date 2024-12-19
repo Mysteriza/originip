@@ -23,7 +23,7 @@ chmod +x oif
 ```
 
 ```
-mv oif /usr/bin/
+sudo mv oif /usr/bin/
 ```
 
 # Setup
